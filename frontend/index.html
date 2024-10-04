@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxPayer Manager</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>TaxPayer Manager</h1>
+        <img src="https://images.unsplash.com/photo-1631629571979-1c82e81c7cee?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Platypus" class="platypus-image">
+    </header>
+    
+    <main>
+        <section id="add-taxpayer">
+            <h2>Add New TaxPayer</h2>
+            <form id="taxpayer-form">
+                <input type="text" id="tid" placeholder="TID" required>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit">Add TaxPayer</button>
+            </form>
+        </section>
+
+        <section id="search-taxpayer">
+            <h2>Search TaxPayer</h2>
+            <form id="search-form">
+                <input type="text" id="search-tid" placeholder="Enter TID to search" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-result"></div>
+        </section>
+
+        <section id="taxpayer-list">
+            <h2>TaxPayer List</h2>
+            <ul id="taxpayers"></ul>
+        </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
